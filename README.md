@@ -1,7 +1,11 @@
 Name: PShr
+
 Version: 0.1
+
 Author: Kevin Doblosky (kdoblosky@gmail.com)
+
 Source: https://github.com/kdoblosky/PShr
+
 Last Updated: 2014-02-12
 
 Simple hr for command line. Inspired by https://github.com/LuRsT/hr.
@@ -12,13 +16,17 @@ to separate output when scrolling backwards through the buffer looking for resul
 Includes one function, Get-HorizontalLine, and an alias for it, hr.
 
 Usage:
+
 Dot-source this file, or include its contents in your $profile.
 
 Create a single line composed of dashes
+
 $ > hr
+
 
 Create 4 lines, composed of carats
 $ > hr ^ 4
 
 Or, more verbosely:
+
 $ > Get-HorizontalLine -Character ^ -Count 4
