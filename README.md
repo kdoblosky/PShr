@@ -14,11 +14,11 @@ Includes one function, Get-HorizontalLine, and an alias for it, hr.
 Usage:
 Dot-source this file, or include its contents in your $profile.
 
-# Creates a single line composed of dashes
+Create a single line composed of dashes
 $ > hr
 
-# Creates 4 lines, composed of carats
+Create 4 lines, composed of carats
 $ > hr ^ 4
 
-# Or, more verbosely:
+Or, more verbosely:
 $ > Get-HorizontalLine -Character ^ -Count 4
