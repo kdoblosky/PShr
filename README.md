@@ -10,7 +10,7 @@ Last Updated: 2014-02-12
 
 Simple hr for command line. Inspired by https://github.com/LuRsT/hr.
 
-Creates a horizontal line, based on any character, of however many rows you want. This can help 
+Creates a horizontal line, based on any input string, of however many rows you want. This can help 
 to separate output when scrolling backwards through the buffer looking for results of a command.
 
 Includes one function, Get-HorizontalLine, and an alias for it, hr.
@@ -19,14 +19,19 @@ Usage:
 
 Dot-source this file, or include its contents in your $profile.
 
-Create a single line composed of dashes
+Create a single line composed of dashes:
 
 $ > hr
 
 
-Create 4 lines, composed of carats
+Create 4 lines, composed of carats:
+
 $ > hr ^ 4
 
 Or, more verbosely:
 
-$ > Get-HorizontalLine -Character ^ -Count 4
+$ > Get-HorizontalLine -InputString ^ -Count 4
+
+Create line based on "BREAK":
+
+$ > hr BREAK
