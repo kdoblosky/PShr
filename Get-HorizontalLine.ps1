@@ -2,6 +2,7 @@ Function Get-HorizontalLine
 {
     Param(
         [ValidateNotNullOrEmpty()]
+        [ValidateLength(1,1)]
         [string]$Character = '-',
         
         [ValidateNotNullOrEmpty()]
