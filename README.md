@@ -40,7 +40,7 @@ Create line with background color Black, and foreground color Green:
 
 $ > hr -bg Black -fg Green
 
-Or, more verobsely:
+Or, more verbosely:
 
 $ > Get-HorizontalLine -BackColor Black -ForeColor Green
 
