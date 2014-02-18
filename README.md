@@ -35,3 +35,14 @@ $ > Get-HorizontalLine -InputString ^ -Count 4
 Create line based on "BREAK":
 
 $ > hr BREAK
+
+Create line with background color Black, and foreground color Green:
+
+$ > hr -bg Black -fg Green
+
+Or, more verobsely:
+
+$ > Get-HorizontalLine -BackColor Black -ForeColor Green
+
+(On my system, I changed the default colors to Black and Green, as above, but 
+left the defaults as $null in the published script)
