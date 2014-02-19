@@ -1,6 +1,6 @@
 Name: PShr
 
-Version: 0.1
+Version: 0.4
 
 Author: Kevin Doblosky (kdoblosky@gmail.com)
 
@@ -18,31 +18,24 @@ Includes one function, Get-HorizontalLine, and an alias for it, hr.
 Usage:
 
 Dot-source this file, or include its contents in your $profile.
-
-Create a single line composed of dashes:
-
+```
+# Create a single line composed of dashes:
 $ > hr
 
-
-Create 4 lines, composed of carats:
-
+# Create 4 lines, composed of carats:
 $ > hr ^ 4
 
-Or, more verbosely:
-
+# Or, more verbosely:
 $ > Get-HorizontalLine -InputString ^ -Count 4
 
-Create line based on "BREAK":
-
+# Create line based on "BREAK":
 $ > hr BREAK
 
-Create line with background color Black, and foreground color Green:
-
+# Create line with background color Black, and foreground color Green:
 $ > hr -bg Black -fg Green
 
-Or, more verbosely:
-
+# Or, more verbosely:
 $ > Get-HorizontalLine -BackColor Black -ForeColor Green
-
+```
 (On my system, I changed the default colors to Black and Green, as above, but 
 left the defaults as $null in the published script)
